@@ -1,4 +1,25 @@
-# multiple inheritance & multilevel inheritance
+# multiple inheritance 
+""" 
+    A      B  
+     \    /  
+      \  /  
+       C  
+class C(A, B): pass  # C inherits from A & B
+"""
+
+# multilevel inheritance
+"""
+    A  
+    ↓  
+    B  
+    ↓  
+    C  
+    
+class A: pass  
+class B(A): pass  # B inherits from A  
+class C(B): pass  # C inherits from B
+"""
+
 
 class Animal:
     def __init__(self,name):
